@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FreeFlow - Chill Music</title>
+    <link rel="stylesheet" href="chillCSS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <div class="wave-logo"></div>
+            <h1>FreeFlow</h1>
+        </div>
+        <nav class="main-nav">
+            <a href="projecttttHtml.html">Home</a>
+            <a href="study.html">Study</a>
+            <a href="sleep.html">Sleep</a>
+            <a href="chill.html" class="active">Chill</a>
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Search music..." class="search-bar">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+        <a href="login.html" class="login-btn">Login</a>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <h1>Unwind & Relax: Chill Vibes</h1>
+            <p>Find your flow with smooth beats perfect for relaxing and unwinding.</p>
+        </section>
+
+        <section class="music-section">
+            <h2>Lounge & Chill</h2>
+            <div class="music-grid">
+                <div class="music-card" data-genre="Chill - Sunset Lounge" data-id="chill-lounge-1">
+                    <div class="card-image-container">
+                        <img src="sunset.jpg" alt="Lounge Music">
+                        <div class="image-overlay"></div>
+                        <div class="image-text">
+                            <h3>Sunset Lounge</h3>
+                            <p>Smooth Evening Vibes</p>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="play-btn" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3" onclick="playMusic(this)">
+                            <i class="fas fa-play"></i> Play
+                        </button>
+                        <button class="add-remove-btn" data-action="add">
+                            <i class="fas fa-plus"></i> Add
+                        </button>
+                    </div>
+                </div>
+                <div class="music-card" data-genre="Chill - Coffeehouse Jazz" data-id="chill-lounge-2">
+                    <div class="card-image-container">
+                        <img src="jazz.jpg" alt="Coffeehouse Jazz">
+                        <div class="image-overlay"></div>
+                        <div class="image-text">
+                            <h3>Coffeehouse Jazz</h3>
+                            <p>Mellow Instrumentals</p>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="play-btn" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3" onclick="playMusic(this)">
+                            <i class="fas fa-play"></i> Play
+                        </button>
+                        <button class="add-remove-btn" data-action="add">
+                            <i class="fas fa-plus"></i> Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="music-section">
+            <h2>Electronic Relaxation</h2>
+            <div class="music-grid">
+                <div class="music-card" data-genre="Chill - Ambient Electronica" data-id="chill-electronic-1">
+                    <div class="card-image-container">
+                        <img src="electronic1.jpg" alt="Ambient Electronica">
+                        <div class="image-overlay"></div>
+                        <div class="image-text">
+                            <h3>Ambient Electronica</h3>
+                            <p>Atmospheric Beats</p>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="play-btn" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-11.mp3" onclick="playMusic(this)">
+                            <i class="fas fa-play"></i> Play
+                        </button>
+                        <button class="add-remove-btn" data-action="add">
+                            <i class="fas fa-plus"></i> Add
+                        </button>
+                    </div>
+                </div>
+                <div class="music-card" data-genre="Chill - Downtempo Grooves" data-id="chill-electronic-2">
+                    <div class="card-image-container">
+                        <img src="electronic2.jpg" alt="Downtempo Grooves">
+                        <div class="image-overlay"></div>
+                        <div class="image-text">
+                            <h3>Downtempo Grooves</h3>
+                            <p>Relaxed Rhythms</p>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="play-btn" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-12.mp3" onclick="playMusic(this)">
+                            <i class="fas fa-play"></i> Play
+                        </button>
+                        <button class="add-remove-btn" data-action="add">
+                            <i class="fas fa-plus"></i> Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="music-section">
+            <h2>Acoustic Sessions</h2>
+            <div class="music-grid">
+                <div class="music-card" data-genre="Chill - Folk Sessions" data-id="chill-acoustic-1">
+                    <div class="card-image-container">
+                        <img src="folk.jpg" alt="Folk Sessions">
+                        <div class="image-overlay"></div>
+                        <div class="image-text">
+                            <h3>Folk Sessions</h3>
+                            <p>Organic Melodies</p>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="play-btn" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-13.mp3" onclick="playMusic(this)">
+                            <i class="fas fa-play"></i> Play
+                        </button>
+                        <button class="add-remove-btn" data-action="add">
+                            <i class="fas fa-plus"></i> Add
+                        </button>
+                    </div>
+                </div>
+                <div class="music-card" data-genre="Chill - Guitar Sounds" data-id="chill-acoustic-2">
+                    <div class="card-image-container">
+                        <img src="acoustic1.jpg" alt="Guitar Sounds">
+                        <div class="image-overlay"></div>
+                        <div class="image-text">
+                            <h3>Guitar Sounds</h3>
+                            <p>Soothing Strings</p>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="play-btn" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-14.mp3" onclick="playMusic(this)">
+                            <i class="fas fa-play"></i> Play
+                        </button>
+                        <button class="add-remove-btn" data-action="add">
+                            <i class="fas fa-plus"></i> Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="chillJS.js"></script>
+</body>
+</html>

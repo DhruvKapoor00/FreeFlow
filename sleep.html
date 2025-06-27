@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FreeFlow - Sleep Music</title>
+    <link rel="stylesheet" href="sleepCSS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <div class="wave-logo"></div>
+            <h1>FreeFlow</h1>
+        </div>
+        <nav class="main-nav">
+            <a href="projecttttHtml.html">Home</a>
+            <a href="study.html">Study</a>
+            <a href="sleep.html">Sleep</a>
+            <a href="chill.html">Chill</a>
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Search music..." class="search-bar">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+        <a href="login.html" class="login-btn">Login</a>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <h1>Rest & Recharge: Soothing Sleep Sounds</h1>
+            <p>Drift into peaceful slumber with calming melodies and ambient soundscapes.</p>
+        </section>
+
+        <section class="music-section">
+            <h2>Ambient Drones</h2>
+            <div class="music-grid">
+                <div class="music-card" data-genre="Sleep Ambient - Deep Relaxation" data-id="sleep-ambient-1">
+                    <div class="card-image-container">
+                        <img src="relax.jpg" alt="Ambient Drones">
+                        <div class="image-overlay"></div>
+                        <div class="image-text">
+                            <h3>Deep Relaxation</h3>
+                            <p>Subtle, Evolving Tones</p>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="play-btn" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-15.mp3" onclick="playMusic(this)">
+                            <i class="fas fa-play"></i> Play
+                        </button>
+                        <button class="add-remove-btn" data-action="add">
+                            <i class="fas fa-plus"></i> Add
+                        </button>
+                    </div>
+                </div>
+                <div class="music-card" data-genre="Sleep Ambient - Dreamscape" data-id="sleep-ambient-2">
+                    <div class="card-image-container">
+                        <img src="waves.jpg" alt="Dreamscape">
+                        <div class="image-overlay"></div>
+                        <div class="image-text">
+                            <h3>Dreamscape</h3>
+                            <p>Ethereal Soundscapes</p>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="play-btn" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-16.mp3" onclick="playMusic(this)">
+                            <i class="fas fa-play"></i> Play
+                        </button>
+                        <button class="add-remove-btn" data-action="add">
+                            <i class="fas fa-plus"></i> Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="music-section">
+            <h2>Nature Sounds</h2>
+            <div class="music-grid">
+                <div class="music-card" data-genre="Sleep Nature - Forest Night" data-id="sleep-nature-1">
+                    <div class="card-image-container">
+                        <img src="forest study.jpg" alt="Forest Night">
+                        <div class="image-overlay"></div>
+                        <div class="image-text">
+                            <h3>Forest Night</h3>
+                            <p>Crkets & Gentle Wind</p>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="play-btn" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-17.mp3" onclick="playMusic(this)">
+                            <i class="fas fa-play"></i> Play
+                        </button>
+                        <button class="add-remove-btn" data-action="add">
+                            <i class="fas fa-plus"></i> Add
+                        </button>
+                    </div>
+                </div>
+                <div class="music-card" data-genre="Sleep Nature - Rain on Tent" data-id="sleep-nature-2">
+                    <div class="card-image-container">
+                        <img src="gentle strom-unsplash.jpg" alt="Rain on Tent">
+                        <div class="image-overlay"></div>
+                        <div class="image-text">
+                            <h3>Rain on Tent</h3>
+                            <p>Cozy Rain Sounds</p>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="play-btn" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-18.mp3" onclick="playMusic(this)">
+                            <i class="fas fa-play"></i> Play
+                        </button>
+                        <button class="add-remove-btn" data-action="add">
+                            <i class="fas fa-plus"></i> Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="music-section">
+            <h2>Meditation & Chimes</h2>
+            <div class="music-grid">
+                <div class="music-card" data-genre="Sleep Meditation - Singing Bowls" data-id="sleep-meditation-1">
+                    <div class="card-image-container">
+                        <img src="bowl high frq.jpg" alt="Singing Bowls">
+                        <div class="image-overlay"></div>
+                        <div class="image-text">
+                            <h3>Singing Bowls</h3>
+                            <p>Vibrational Healing</p>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="play-btn" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-19.mp3" onclick="playMusic(this)">
+                            <i class="fas fa-play"></i> Play
+                        </button>
+                        <button class="add-remove-btn" data-action="add">
+                            <i class="fas fa-plus"></i> Add
+                        </button>
+                    </div>
+                </div>
+                <div class="music-card" data-genre="Sleep Chimes - Wind Chimes" data-id="sleep-chimes-1">
+                    <div class="card-image-container">
+                        <img src="medi1.jpg" alt="Wind Chimes">
+                        <div class="image-overlay"></div>
+                        <div class="image-text">
+                            <h3>Wind Chimes</h3>
+                            <p>Gentle, Random Tones</p>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="play-btn" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-20.mp3" onclick="playMusic(this)">
+                            <i class="fas fa-play"></i> Play
+                        </button>
+                        <button class="add-remove-btn" data-action="add">
+                            <i class="fas fa-plus"></i> Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="sleepJS.js"></script>
+</body>
+</html>

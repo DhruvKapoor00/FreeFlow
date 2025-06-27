@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FreeFlow - Peaceful Music</title>
+    <link rel="stylesheet" href="projectttCSS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <div class="wave-logo"></div>
+            <h1>FreeFlow</h1>
+        </div>
+        <nav class="main-nav">
+            <a href="projecttttHtml.html">Home</a>
+            <a href="study.html">Study</a>
+            <a href="sleep.html">Sleep</a>
+            <a href="chill.html">Chill</a>
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Search music..." class="search-bar">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+        <a href="login.html" class="login-btn">Login</a>
+    </header>
+
+    <main>
+        <section class="home-home">
+            <div class="home-content">
+                   <h1 class="animate__animated animate__fadeInDown" style="font-family:inherit; font-size: 4.5rem;">Study. <br> Sleep. <br> Chill.</h1>
+            <b><p id="home-para">Listen to music from many different <br>categories while sleeping or studying.
+            <br> Enjoy every moment of your study time with the music you love.
+            <br> Enter Flow state on command with free flow. </p></b>
+            </div>
+            <div class="home-img">
+                <img src="background dog.jpeg" alt="background" height="600" width="800px">
+            </div>
+
+        </section>
+        <section class="music-section">
+            <h2>Study Lofi Music</h2>
+            <div class="music-grid">
+                <div class="music-card" data-genre="Study Lofi - Coffee Shop Vibes" data-id="study-lofi-1">
+                    <div class="card-image-container">
+                        <img src="coffee shop.jpg" alt="Coffee Shop">
+                        <div class="image-overlay"></div>
+                        <div class="image-text">
+                            <h3>Coffee Shop Vibes</h3>
+                            <p>Lofi Study Beats</p>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="play-btn" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" onclick="playMusic(this)">
+                            <i class="fas fa-play"></i> Play
+                        </button>
+                        <button class="add-remove-btn" data-action="add">
+                            <i class="fas fa-plus"></i> Add
+                        </button>
+                    </div>
+                </div>
+
+                <div class="music-card" data-genre="Study Lofi - Rainy Window View" data-id="study-lofi-2">
+                    <div class="card-image-container">
+                        <img src="rainy window.jpg" alt="Rainy Window">
+                        <div class="image-overlay"></div>
+                        <div class="image-text">
+                            <h3>Rainy Window View</h3>
+                            <p>Lofi Jazz Rain</p>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="play-btn" data-src="good-night-lofi-cozy-chill-music-160166.mp3" onclick="playMusic(this)">
+                            <i class="fas fa-play"></i> Play
+                        </button>
+                        <button class="add-remove-btn" data-action="add">
+                            <i class="fas fa-plus"></i> Add
+                        </button>
+                    </div>
+                </div>
+
+                <div class="music-card" data-genre="Study Lofi - Study Session" data-id="study-lofi-3">
+                    <div class="card-image-container">
+                        <img src="books study.jpg" alt="Book Reading">
+                        <div class="image-overlay"></div>
+                        <div class="image-text">
+                            <h3>Study Session</h3>
+                            <p>Focus Lofi</p>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="play-btn" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" onclick="playMusic(this)">
+                            <i class="fas fa-play"></i> Play
+                        </button>
+                        <button class="add-remove-btn" data-action="add">
+                            <i class="fas fa-plus"></i> Add
+                        </button>
+                    </div>
+                </div>
+
+                <div class="music-card" data-genre="Study Lofi - Forest Study" data-id="study-lofi-4">
+                    <div class="card-image-container">
+                        <img src="forest study.jpg" alt="Forest Study">
+                        <div class="image-overlay"></div>
+                        <div class="image-text">
+                            <h3>Forest Study</h3>
+                            <p>Nature Lofi</p>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="play-btn" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3" onclick="playMusic(this)">
+                            <i class="fas fa-play"></i> Play
+                        </button>
+                        <button class="add-remove-btn" data-action="add">
+                            <i class="fas fa-plus"></i> Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="music-section">
+            <h2>Sleep Music</h2>
+            <div class="music-grid">
+                <div class="music-card" data-genre="Sleep Music - Ocean Waves" data-id="sleep-1">
+                    <div class="card-image-container">
+                        <img src="waves.jpg" alt="Ocean Waves">
+                        <div class="image-overlay"></div>
+                        <div class="image-text">
+                            <h3>Ocean Waves</h3>
+                            <p>Soothing Sounds</p>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="play-btn" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3" onclick="playMusic(this)">
+                            <i class="fas fa-play"></i> Play
+                        </button>
+                        <button class="add-remove-btn" data-action="add">
+                            <i class="fas fa-plus"></i> Add
+                        </button>
+                    </div>
+                </div>
+
+                <div class="music-card" data-genre="Sleep Music - Gentle Storm" data-id="sleep-2">
+                    <div class="card-image-container">
+                        <img src="gentle strom-unsplash.jpg" alt="Rain Storm">
+                        <div class="image-overlay"></div>
+                        <div class="image-text">
+                            <h3>Gentle Storm</h3>
+                            <p>Rain Sounds</p>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="play-btn" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3" onclick="playMusic(this)">
+                            <i class="fas fa-play"></i> Play
+                        </button>
+                        <button class="add-remove-btn" data-action="add">
+                            <i class="fas fa-plus"></i> Add
+                        </button>
+                    </div>
+                </div>
+
+                <div class="music-card" data-genre="Sleep Music - Sleep Piano" data-id="sleep-3">
+                    <div class="card-image-container">
+                        <img src="piano.jpg" alt="Piano Sleep">
+                        <div class="image-overlay"></div>
+                        <div class="image-text">
+                            <h3>Sleep Piano</h3>
+                            <p>Soft Melodies</p>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="play-btn" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3" onclick="playMusic(this)">
+                            <i class="fas fa-play"></i> Play
+                        </button>
+                        <button class="add-remove-btn" data-action="add">
+                            <i class="fas fa-plus"></i> Add
+                        </button>
+                    </div>
+                </div>
+
+                <div class="music-card" data-genre="Sleep Music - Mountain Serenity" data-id="sleep-4">
+                    <div class="card-image-container">
+                        <img src="mountains.jpg" alt="Mountain Lake">
+                        <div class="image-overlay"></div>
+                        <div class="image-text">
+                            <h3>Mountain Serenity</h3>
+                            <p>Nature Sounds</p>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="play-btn" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3" onclick="playMusic(this)">
+                            <i class="fas fa-play"></i> Play
+                        </button>
+                        <button class="add-remove-btn" data-action="add">
+                            <i class="fas fa-plus"></i> Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-section">
+            <h2>Featured Sounds</h2>
+            <div class="featured-container">
+                <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Featured Sound">
+                <div class="featured-overlay"></div>
+                <div class="featured-text">
+                    <h3>Sleep & Study Collection</h3>
+                    <p>Curated sounds for focus and relaxation</p>
+                    <button class="featured-btn" data-genre="Featured - Sleep & Study Collection" data-src="good-night-lofi-cozy-chill-music-160166.mp3" onclick="playMusic(this)">
+                        <i class="fas fa-play"></i> Play Collection
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="projectttJS.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FreeFlow - Study Music</title>
+    <link rel="stylesheet" href="studyCSS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <div class="wave-logo"></div>
+            <h1>FreeFlow</h1>
+        </div>
+        <nav class="main-nav">
+            <a href="projecttttHtml.html">Home</a>
+            <a href="study.html">Study</a>
+            <a href="sleep.html">Sleep</a>
+            <a href="chill.html">Chill</a>
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Search music..." class="search-bar">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+        <a href="login.html" class="login-btn">Login</a>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <h1>Deep Focus: Instrumental Study</h1>
+            <p>Unlock your potential with curated instrumental tracks designed for concentration.</p>
+        </section>
+
+        <section class="music-section">
+            <h2>Piano Instrumentals</h2>
+            <div class="music-grid">
+                <div class="music-card" data-genre="Study Piano - Calm Focus" data-id="study-piano-1">
+                    <div class="card-image-container">
+                        <img src="piano.jpg" alt="Study Piano">
+                        <div class="image-overlay"></div>
+                        <div class="image-text">
+                            <h3>Calm Focus</h3>
+                            <p>Gentle Piano Melodies</p>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="play-btn" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-21.mp3" onclick="playMusic(this)">
+                            <i class="fas fa-play"></i> Play
+                        </button>
+                        <button class="add-remove-btn" data-action="add">
+                            <i class="fas fa-plus"></i> Add
+                        </button>
+                    </div>
+                </div>
+                <div class="music-card" data-genre="Study Piano - Classical Study" data-id="study-piano-2">
+                    <div class="card-image-container">
+                        <img src="voilen.jpg" alt="Classical Piano">
+                        <div class="image-overlay"></div>
+                        <div class="image-text">
+                            <h3>Classical Study</h3>
+                            <p>Baroque & Romantic</p>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="play-btn" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-22.mp3" onclick="playMusic(this)">
+                            <i class="fas fa-play"></i> Play
+                        </button>
+                        <button class="add-remove-btn" data-action="add">
+                            <i class="fas fa-plus"></i> Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="music-section">
+            <h2>Acoustic Guitar</h2>
+            <div class="music-grid">
+                <div class="music-card" data-genre="Study Guitar - Mellow Chords" data-id="study-guitar-1">
+                    <div class="card-image-container">
+                        <img src="cords.jpg" alt="Acoustic Guitar">
+                        <div class="image-overlay"></div>
+                        <div class="image-text">
+                            <h3>Mellow Chords</h3>
+                            <p>Relaxing Guitar Loops</p>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="play-btn" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-23.mp3" onclick="playMusic(this)">
+                            <i class="fas fa-play"></i> Play
+                        </button>
+                        <button class="add-remove-btn" data-action="add">
+                            <i class="fas fa-plus"></i> Add
+                        </button>
+                    </div>
+                </div>
+                <div class="music-card" data-genre="Study Guitar - Fingerstyle Focus" data-id="study-guitar-2">
+                    <div class="card-image-container">
+                        <img src="forest study.jpg" alt="Fingerstyle Guitar">
+                        <div class="image-overlay"></div>
+                        <div class="image-text">
+                            <h3>Fingerstyle Focus</h3>
+                            <p>Intricate Guitar Work</p>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="play-btn" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-24.mp3" onclick="playMusic(this)">
+                            <i class="fas fa-play"></i> Play
+                        </button>
+                        <button class="add-remove-btn" data-action="add">
+                            <i class="fas fa-plus"></i> Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="music-section">
+            <h2>Flute & Wind Instruments</h2>
+            <div class="music-grid">
+                <div class="music-card" data-genre="Study Flute - Gentle Breezes" data-id="study-flute-1">
+                    <div class="card-image-container">
+                        <img src="flute.jpg" alt="Flute">
+                        <div class="image-overlay"></div>
+                        <div class="image-text">
+                            <h3>Gentle Breezes</h3>
+                            <p>Soothing Flute Melodies</p>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="play-btn" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-25.mp3" onclick="playMusic(this)">
+                            <i class="fas fa-play"></i> Play
+                        </button>
+                        <button class="add-remove-btn" data-action="add">
+                            <i class="fas fa-plus"></i> Add
+                        </button>
+                    </div>
+                </div>
+                <div class="music-card" data-genre="Study Flute - Zen Winds" data-id="study-flute-2">
+                    <div class="card-image-container">
+                        <img src="mountains.jpg" alt="Zen Winds">
+                        <div class="image-overlay"></div>
+                        <div class="image-text">
+                            <h3>Zen Winds</h3>
+                            <p>Meditative Wind Sounds</p>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="play-btn" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-26.mp3" onclick="playMusic(this)">
+                            <i class="fas fa-play"></i> Play
+                        </button>
+                        <button class="add-remove-btn" data-action="add">
+                            <i class="fas fa-plus"></i> Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="studyJS.js"></script>
+</body>
+</html>
